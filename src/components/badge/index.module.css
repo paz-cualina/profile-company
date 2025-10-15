@@ -1,0 +1,28 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: var(--border-radius-lg);
+  font-size: 10px;
+  font-weight: 500;
+  color: #2430a0;
+  background-color: #bfdbfe;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.badge.blue {
+  color: #2430a0;
+  background-color: #bfdbfe;
+}
+
+.badge.green {
+  color: #185631;
+  background-color: #bbf7d0;
+}
+
+.badge.purple {
+  color: #5b228a;
+  background-color: #e9d5ff;
+}

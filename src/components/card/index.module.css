@@ -1,0 +1,46 @@
+.card {
+  width: 100%;
+  min-width: 280px;
+  background: var(--card-bg);
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--card-border);
+  padding: 14px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.card .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.card .currentCompanies {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-100);
+}
+
+.card .legend {
+  font-size: 12px;
+  color: var(--text-dark);
+}
+
+.card .growthContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  color: var(--secondary-400);
+}
+
+.card .growthContainer.decrease {
+  color: var(--warning);
+}
+
+@media (max-width: 760px) {
+  .card {
+    min-width: 100%;
+  }
+}

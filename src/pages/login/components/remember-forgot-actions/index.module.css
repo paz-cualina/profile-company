@@ -1,0 +1,19 @@
+.actionsWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.forgotPassword {
+  background: none;
+  border: none;
+  color: var(--white);
+  font-size: 12px;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.forgotPassword:hover {
+  color: var(--white);
+  text-decoration: none;
+}

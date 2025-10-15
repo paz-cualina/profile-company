@@ -1,0 +1,103 @@
+.sidebarContainer {
+  background: var(--primary-100);
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  width: 246px;
+  min-height: 100vh;
+  max-height: 100vh;
+  padding: 20px 12px;
+  transition: all 0.3s ease;
+}
+
+.sidebarLogo {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.sidebarMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebarMenuItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+  border-radius: var(--border-radius-sm);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebarMenuItem:hover {
+  background-color: #3a3879;
+  color: var(--white);
+}
+
+.sidebarMenuItem.active:hover,
+.sidebarMenuItem.active:hover .sidebarMenuIcon {
+  color: var(--white);
+}
+
+.sidebarMenuItem:hover .sidebarMenuIcon,
+.sidebarMenuItem.active .sidebarMenuIcon {
+  color: #b3adff;
+}
+
+.sidebarMenuItem.active {
+  background: var(--primary-200);
+  color: var(--white);
+}
+
+.sidebarMenuIcon {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.userSettings {
+  margin-top: auto;
+  font-size: 12px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.userSettings .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.userSettings .userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.userSettings .userName {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (max-width: 760px) {
+  .sidebarContainer {
+    width: 150px;
+  }
+  .userSettings {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

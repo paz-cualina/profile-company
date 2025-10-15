@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+
+  --text-dark: #404040;
+  --text-medium: #aaaaaa;
+  --text-light: #98a2b3;
+
+  --bg-light: #f2f2f7;
+  --bg-light-100: #f5f5f5;
+
+  --warning: #dc362e;
+  --warning-light: #fff0f1;
+  --warning-dark: #b3261e;
+  --success: #20bf86;
+  --success-light: #f5fff8;
+  --success-dark: #146a4b;
+  --info-yellow: #e9d180;
+  --info-yellow-light: #fffff5;
+  --info-yellow-dark: #b89108;
+  --disabled: #b9b9b9;
+
+  --primary-100: #00035b;
+  --primary-200: #323076;
+  --primary-300: #2430a0;
+  --primary-400: #bfdbfe;
+  --primary-500: #f2f2ff;
+
+  --secondary-100: #6155f5;
+  --secondary-200: #3f35b9;
+  --secondary-300: #323076;
+  --secondary-400: #6750a4;
+
+  --card-bg: rgba(85, 85, 245, 0.06);
+  --card-border: #b0aee4;
+
+  --table-hover: #e3e3fa;
+  --table-border: var(--card-bg);
+
+  --border-radius-sm: 8px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+
+  --border-input-focus: var(--secondary-100);
+  --input-padding: 10px 16px;
+  --input-height: 46px;
+
+  --border-input: #c7c7cc;
+
+  --font-family: 'Roboto', sans-serif;
+
+  --box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow-hover: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--black);
+  background: var(--bg-light);
+  font-family: var(--font-family);
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body p {
+  line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*LIST*/
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/*TABLE*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/*PICTURE*/
+picture {
+  line-height: 0;
+}
+
+/*INPUT*/
+input,
+select,
+textarea {
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--text-dark);
+  padding: var(--input-padding);
+  background-color: transparent;
+  border: 1px solid var(--border-input);
+  border-radius: var(--border-radius-sm);
+  height: var(--input-height);
+  width: 100%;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  resize: none;
+  height: auto;
+  min-height: 132px;
+  line-height: 1.4;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid var(--border-input-focus);
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--text-medium);
+}
+
+input:disabled,
+select:disabled,
+textarea:disabled {
+  background-color: var(--bg-light-100);
+  color: var(--disabled);
+  cursor: not-allowed;
+}
+
+textarea::-webkit-scrollbar {
+  width: var(--border-radius-sm);
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-md);
+}
+
+textarea::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/*TITLES*/
+h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--primary-100);
+}
+
+/*LINK*/
+a {
+  font-weight: 500;
+  color: var(--secondary-100);
+  text-decoration: none;
+  line-height: 0;
+}
+
+a:hover {
+  color: var(--secondary-200);
+}
+
+@media (max-width: 760px) {
+  input,
+  select {
+    height: 38px;
+  }
+}

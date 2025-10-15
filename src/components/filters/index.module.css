@@ -1,0 +1,40 @@
+.box {
+  background: var(--white);
+  padding: 16px 20px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius-md);
+  margin: 32px 0;
+}
+
+.box .title {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--black);
+  display: block;
+  margin-bottom: 6px;
+}
+
+.filtersContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.filtersContainer .inputWrapper {
+  width: 100%;
+  position: relative;
+}
+
+.filtersContainer .inputWrapper .icon {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  color: var(--text-medium);
+}
+
+@media (max-width: 760px) {
+  .filtersContainer {
+    flex-wrap: wrap;
+  }
+}

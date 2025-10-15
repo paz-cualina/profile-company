@@ -1,0 +1,19 @@
+.actionsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.actionsWrapper .icon {
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.actionsWrapper .icon:hover {
+  color: var(--secondary-400);
+}
+
+.actionsWrapper .deleteIcon:hover {
+  color: var(--warning-dark);
+}
